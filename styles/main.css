@@ -1,0 +1,90 @@
+html{
+    font-size: 20px;
+}
+
+body{
+    background-color: #333;
+    color: whitesmoke;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+body main{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+
+a{
+    color: aliceblue;
+}
+
+a:visited{
+    color: lightgrey;
+}
+
+a:hover{
+    color: #eee;
+}
+
+/* Header Style */
+
+#nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-header img{
+    width: 30px;
+    height: 30px;
+}
+
+#nav-header ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+#nav-header ul li{
+    margin-right: 20px;
+}
+
+/* menggunakan pseudo class agar list lats child tidak memiliki margin ke kanan */
+#nav-header ul li:last-child{
+    margin-right: 0;
+}
+
+
+#nav-header ul li:active{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+#nav-header ul li a{
+    text-decoration: none;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+/* Section Style */
+table, tr, th, td{
+    border: 1px solid;
+    border-color: aliceblue;
+    padding: 10px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+#home-musicimages{
+    width: 300px;
+    height: 300px;
+}
+
+#about-imagepfp{
+    width: 200px;
+    height: 200px;
+}

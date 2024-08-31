@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ray Siagian">
+        <meta name="description" content="Saya sedang belajar html">
+        <title>
+            Learning HTML
+        </title>
+        <link rel="icon" href="/images/cartoonpfpcircle.png" type="image/x-icon">
+        <!-- memanggil css dari file lain -->
+        <link rel="stylesheet" href="../styles/main.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <nav id="nav-header">
+                <img src="/images/cartoonpfpcircle.png" alt="image profile" title="image_pfp" loading="eager">
+                <ul>
+                    <li id="home">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li id="message">
+                        <a href="message.html">Message</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <h1>Tentang Penulis</h1>
+            <!-- Html dapat menampung multimedia data bukan hanya text -->
+            <!-- Loading Lazy adalah sebuah atribut dimana gambar hanya akan dimuat ketika akan memasuki wilayah yang ditampilkan oleh layar,  -->
+            <!-- Sedangkan loading eager memuat gambar langsung  -->
+            <figure>
+                <img id="about-imagepfp" src="/images/cartoonpfpcircle.png" alt="profile_picture" title="profile picture" loading="eager">
+                <figcaption>
+                print("Hallo Author");
+                </figcaption>
+            </figure>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about-author">Tentang Penulis</a>
+                    </li>
+                    <li>
+                        <a href="#about-hobby">Kegemaran Penulis</a>
+                    </li>
+                    <li><a href="/pages/">Kembali ke home</a></li>
+                </ul>
+            </nav>
+            <!-- Section seperti pemisah antar content -->
+            <section id="about-author">
+                <h2>Ray Siagian</h2>
+                <p>Seorang mahasiswa kelahiran 17 Agustus 2003, memiliki ketertarikan yang tinggi terhadap UI/UX serta mempelajari hal-hal baru lainnya, menurutnya mengubah layar kosong menjadi sesuatu memiliki kesamaan ketika dia menggambar</p>
+            </section>
+            <hr>
+            <section id="about-hobby">
+                <h2>Hobby</h2>
+                <p>
+                    Apa yang sering dia lakukan?<br>
+                    Dikala senggang dia suka menonton youtube, tidak ada genre favorit tertentu, dia menonton ketika dia tertarik. Dia juga memiliki love-hate realtionship dengan menggambar, sering kali ketika ide muncul dikepalanya dia berfikir untuk coba menggambarnya namun hanya kesia-siaan yang muncul pada akhirnya
+                </p>
+            </section>
+            <hr>
+            <!-- antribut pada href / link type -->
+            <!-- ada atribut download -->
+            <!-- ada juga atribut email -->
+            <!-- ada atribut telepon -->
+            <section id="about-downloadpfp">
+                <p>Unduh Gambar profile <a href="images/cartoonpfpcircle.png" download="">disini</a></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Ray Siagian</p>
+        </footer>
+    </body>
+</html>

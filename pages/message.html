@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ray Siagian">
+        <meta name="description" content="Saya sedang belajar html">
+        <title>
+            Learning HTML
+        </title>
+        <link rel="icon" href="/images/cartoonpfpcircle.png" type="image/x-icon">
+        <!-- memanggil css dari file lain -->
+        <link rel="stylesheet" href="../styles/main.css" type="text/css">
+    </head>
+<body>
+    <header>
+        <nav id="nav-header">
+            <img src="/images/cartoonpfpcircle.png" alt="image profile" title="image_pfp" loading="eager">
+            <ul>
+                <li id="home">
+                    <a href="index.html">Home</a>
+                </li>
+                <li id="message">
+                    <a href="message.html">Message</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <h1>Kirimi Aku Pesan</h1>
+        <article id="message-pesan">
+             <!-- Ada banyak jenis form namun ini adalah beberapa -->
+            <form id="contactme" method="get">
+                <fieldset>
+                    <legend>Formulir</legend>
+                    <!-- Firstname -->
+                <p>
+                    <label for="firstName">Nama Depan :</label>
+                    <!-- auto complate akan mengingat apa yang terakhir kali kamu tulis/memberikan saran-->
+                    <input type="text" name="firstName" id="firstName" placeholder="Nama Depan" autocomplete="on" required>
+                </p>
+
+                <!-- Lastname -->
+                <p>
+                    <label for="lastName">Nama Belakang :</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Nama Belakang"autocomplete="on" required>
+                </p>
+
+                <!-- email -->
+                <p>
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" id="email" placeholder="Nama Belakang"autocomplete="on" required>
+                </p>
+
+                <!-- Password -->
+                <p>
+                    <label for="password">Password :</label>
+                    <input type="password" name="password" id="password" placeholder="Password"autocomplete="off" required>
+                </p>
+                
+                <!-- datalist -->
+                <p>
+                    <label for="favoriteDrink">Minuman Favorit</label>
+                    <input type="text" name="favoriteDrink" id="favoriteDrink" list="favoriteDrink-list" required>
+                    <datalist id="favoriteDrink-list">
+                        <option value="cola">Cola</option>
+                        <option value="teh">Teh</option>
+                        <option value="kopi">Kopi</option>
+                    </datalist>
+                    
+                </p>
+
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Kewarganegaraan</legend>
+                    <p>
+                        <input type="radio" name="kewarganegaraan" value="indonesia" id="indonesia" required>
+                        <label for="indonesia">Indonesia</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="kewarganegaraan" value="malaysia" id="malaysia">
+                        <label for="malaysia">Malaysia</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Hewan Peliharaan</legend>
+                    <p>
+                        <input type="checkbox" name="hewanPeliharaan" value="kucing" id="kucing">
+                        <label for="kucing">Kucing</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="hewanPeliharaan" value="anjing" id="anjing">
+                        <label for="anjing">Anjing</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Pesan</legend>
+                    <label for="pesan">Pesan untuk Author</label>
+                    <br>
+                    <textarea name="pesan" id="pesan" cols="50" rows="10" placeholder="Ketik sesuatu" required></textarea>
+                </fieldset>
+
+                <br>
+                <button type="submit" formmethod="post">Kirim</button>
+                <br>
+                <button type="reset">Hapus Data</button>
+            </form>
+        </article>
+    </main>
+</body>
+</html>

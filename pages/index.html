@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+    <!-- Head berfungsi menyimpan metadata -->
+    <!-- Menyimpan link relation seperti css dan javascript -->
+    <head>
+        <meta charset="UTF-8l">
+        <meta name="author" content="Ray Siagian">
+        <meta name="description" content="Saya sedang belajar html">
+        <title>
+            Learning HTML
+        </title>
+        <link rel="icon" href="/images/cartoonpfpcircle.png" type="image/x-icon">
+        <!-- memanggil css dari file lain -->
+        <link rel="stylesheet" href="../styles/main.css" type="text/css">
+    </head>
+
+    <!-- body menyimpan data yg ditampilkan -->
+    <!-- Webpage sejatinya seperti koran atapun media berbasis text -->
+    <body>
+        <header>
+            <nav id="nav-header">
+                <img src="/images/cartoonpfpcircle.png" alt="image profile" title="image_pfp" loading="eager">
+                <ul>
+                    <li id="home">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li id="message">
+                        <a href="message.html">Message</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main>
+        <!-- Heading (H1) -->
+        <!-- biasanya webpage hanya memiliki 1 H1 -->
+        <!-- H1 adalah judul besar -->
+            <h1>Hello World</h1>
+            <!-- H2 dan seterusnya seperti subtopik -->
+            <h2>Namaku Ray</h2>
+            <p>
+                I am learing HTML again<br>and again, and again
+            </p>
+
+            <!-- menambahkan garis horizontal -->
+            <hr>
+
+            <h3>
+                Tentang
+            </h3>
+            <!--html entity element -->
+            <!-- &nbsp; ini adalah salah satu contoh html entity element yg berfungsi memberikan tab -> -->
+            <p>
+                Saya adalah seorang pelajar <a href="about.html">Selengkapnya</a>
+            </p>
+            <hr>
+            <!-- Section dan article -->
+            <!-- article untuk hal yg lebih khusus -->
+            <!-- Section untuk hal yang lebih general -->
+            <section id="home-message">
+                <h3>
+                    Sekilas pesan
+                </h3>
+                <!-- emphesize (cetak miring) -->
+                <!-- salah satu inline element -->
+                <p>
+                    Saya suka <em>menggambar</em> dan juga <em>mendengar lagu</em>
+                </p>
+                <p>
+                    Beberapa judul lagu yang sering ku dengar :
+                </p>
+                <!-- Contoh List -->
+                <!-- ul (unoreder list), o; (order list) -->
+                <!-- ada juga dl (descipion list) didalam nya terdapat dt (description term) atau dd (desciption detail)  -->
+                <ul>
+                    <li>
+                        <!-- Ini adlaah href yang merupakan link yang mengarahkanmu ke halaman atau bahkan situs lain -->
+                        <!-- ini adlaah absolute address href -->
+                        <!-- rules : hindari menulis halaman web secara penuh  -->
+                        <!-- ganti dengan teks deskripsi singkat  -->
+                        <!-- Hindari penggunaan penejlasan redundant -->
+                        <!-- dan penjelasan yang aneh -->
+                        <p><a href="https://open.spotify.com/track/6JpjIy1M7oxvPJ3uVdUKTe?si=f46ccaaf8a7643c8">Creep Acoustic Version Radiohead</a></p>
+                        <!-- Ketika kamu ingin menampilkan sebuah konten dengan penjelasan tertentu kamu dapat menggunakan figure -->
+                        <figure>
+                            <img id="home-musicimages" src="/images/creep_acoustic.jpg" alt="creep_acoustic" title="creep-acoustic" loading="lazy">
+                            <figcaption>Creep-Acoustic Radiohead</figcaption>
+                        </figure>                  
+                    </li>
+                    <li>
+                        <p><a href="https://open.spotify.com/track/3IGPoMUqlbDvM2hVQFhWzF?si=76a85ed2a1834ad9">Mengapa Baru Sekarang? HIVI</a></p>
+                        <figure>
+                            <img id="home-musicimages" src="/images/mengapa_baru_sekarang.jpg" alt="mebgapa_baru_sekarang" title="mengapa baru sekarang-hivi" loading="lazy">
+                            <figcaption>Mengapa Baru Sekarang? HIVI</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+                <br>
+                <section id="home-tablesong">
+                    <p>Beberapa Lagu yang Layak dicoba</p>
+                    <!-- Contoh table -->
+                    <table>
+                        <tr><th>Judul Lagu</th>
+                           <th>Band/Musisi</th>
+                        </tr>
+                        <tr>
+                            <td>Benci Untuk Mencinta</td>
+                            <td>Naif</td>
+                        </tr>
+                        <tr>
+                            <td> Valentine</td>
+                            <td>Laufey</td>
+                        </tr>
+                    </table>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <p>Ray Siagian</p>
+        </footer>
+    </body>
+</html>
